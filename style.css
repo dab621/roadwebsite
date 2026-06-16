@@ -1,0 +1,195 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ── Nav ── */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 32px;
+}
+
+.brand {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.links-wrapper {
+  position: relative;
+  text-align: right;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.links-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  background: #fff;
+  z-index: 100;
+  min-width: max-content;
+}
+
+.links-dropdown a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.links-dropdown a:hover {
+  text-decoration: underline;
+}
+
+/* ── Home page ── */
+
+.home-main {
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  min-height: calc(100vh - 74px);
+  padding: 64px 32px 32px;
+  gap: 40px;
+  align-items: start;
+}
+
+.tagline {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+.stay-loop {
+  color: #000;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── About page ── */
+
+.about-main {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  min-height: calc(100vh - 74px);
+  padding: 60px 32px 60px;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.about-lead {
+  font-size: 1.45rem;
+  line-height: 1.55;
+  margin-bottom: 36px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.divider {
+  margin: 28px 0;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.about-content ul {
+  margin: 0 0 28px 20px;
+}
+
+.about-content ul li {
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.about-content a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.more-soon {
+  margin-top: 48px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .home-main,
+  .about-main {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-lead {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  .links-dropdown a {
+    font-size: 1.1rem;
+  }
+}
