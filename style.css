@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phaisarn&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -26,7 +27,8 @@ nav {
 .brand {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 12pt;
+  font-family: 'Phaisarn', sans-serif;
 }
 
 .nav-right {
@@ -44,8 +46,8 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
-  font-family: inherit;
-  font-size: 1rem;
+  font-family: 'Phaisarn', sans-serif;
+  font-size: 12pt;
   color: #000;
   text-decoration: none;
   padding: 0;
@@ -73,8 +75,9 @@ nav {
 .links-dropdown a {
   color: #000;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 12pt;
   line-height: 1.4;
+  font-family: 'Phaisarn', sans-serif;
 }
 
 .links-dropdown a:hover {
@@ -103,7 +106,8 @@ nav {
 .stay-loop {
   color: #000;
   text-decoration: underline;
-  font-size: 1rem;
+  font-size: 12pt;
+  font-family: 'Phaisarn', sans-serif;
 }
 
 .home-image img {
