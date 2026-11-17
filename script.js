@@ -1,1 +1,1 @@
-// Links dropdown is handled via CSS hover on .links-wrapper
+// Nav dropdowns are handled via CSS hover on .dropdown-wrapper
